@@ -1,0 +1,22 @@
+
+<h1>Hola <%= @nombre %></h1>
+
+<p>
+<%= 2+2%>
+</p>
+
+<p>
+<%# 2+2%>
+</p>
+
+<% if @nombre == "Manuel" %>
+    <p>Desarrollo de Manuel<p>
+<%end%>
+
+<% 10.times do |i| %>
+    <p><%= i+1 %></p>
+<%end%>
+
+<% @skills.each do |skill| %>
+    <p><%=skill%></p>
+<%end%>
